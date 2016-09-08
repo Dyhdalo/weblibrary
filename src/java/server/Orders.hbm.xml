@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23.11.2014 21:24:18 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="server.Orders" table="ORDERS" schema="APP">
+        <id name="idoforder" type="int">
+            <column name="IDOFORDER" />
+            <generator class="assigned" />
+        </id>
+        <property name="idofbook" type="int">
+            <column name="IDOFBOOK" not-null="true" />
+        </property>
+        <property name="idofuser" type="int">
+            <column name="IDOFUSER" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

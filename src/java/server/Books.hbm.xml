@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23.11.2014 21:24:18 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="server.Books" table="BOOKS" schema="APP">
+        <id name="idofbook" type="int">
+            <column name="IDOFBOOK" />
+            <generator class="assigned" />
+        </id>
+        <property name="author" type="string">
+            <column name="AUTHOR" length="100" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="100" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

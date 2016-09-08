@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23.11.2014 21:24:18 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="server.Users" table="USERS" schema="APP">
+        <id name="idofuser" type="int">
+            <column name="IDOFUSER" />
+            <generator class="assigned" />
+        </id>
+        <property name="role" type="string">
+            <column name="ROLE" length="30" />
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" length="30" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>
